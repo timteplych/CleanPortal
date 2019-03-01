@@ -9,4 +9,6 @@ public interface ConfigService {
 
     String getServiceDir();
 
+    long getFileAgeInDays();
+
 }

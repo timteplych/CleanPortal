@@ -18,6 +18,9 @@ public class ConfigServiceBean implements ConfigService {
     @Value("${serviceDir}")
     private String serviceDir;
 
+    @Value("${fileAgeInDays}")
+    private long fileAgeInDays;
+
     @Override
     public String getTargetDir() {
         return targetDir;
@@ -26,5 +29,10 @@ public class ConfigServiceBean implements ConfigService {
     @Override
     public String getServiceDir() {
         return serviceDir;
+    }
+
+    @Override
+    public long getFileAgeInDays() {
+        return fileAgeInDays;
     }
 }
